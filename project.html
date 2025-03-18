@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Code Display</title>
+    <style>
+        /* Định dạng chung */
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: rgb(51, 54, 71); /* Nền tối */
+            color: #f8f8f2;
+            padding: 20px;
+        }
+        /* Code block và output giống nhau */
+        .code, .output {
+            background-color: #1e1f29; /* Nền tối */
+            color: rgb(156, 196, 241); /* Màu chữ xanh nhẹ */
+            font-family: 'JetBrains Mono', monospace;
+            padding: 10px;
+            border-left: 4px solid rgb(145, 187, 233); /* Viền trái màu xanh lá */
+            margin-top: 10px;
+            white-space: pre-wrap;
+            border-radius: 5px;
+        }
+        /* Thụt lề cho các phần nội dung nhỏ hơn */
+        .indent {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hướng dẫn học Python</h1>
+    <h2>I. Các kiểu dữ liệu</h2>
+    <h3 class="indent">Các kiểu dữ liệu trong Python giúp thuận tiện trong việc lập trình, gán kiểu dữ liệu và tránh các lỗi về kiểu dữ liệu.</h3>
+    <h3 class="indent">1. Số</h3>
+    <h4 class="indent">Là kiểu dữ liệu nhập vào số. Bao gồm số nguyên và số thực.</h4>
+    <h4 class="indent">Số nguyên: int()</h4>
+    <h4 class="indent">Số thực: float()</h4>
+    <h2>II. In 'print()'</h2>
+    <h3 class="indent">2. Chuỗi</h3>
+    <h4 class="indent">Là kiểu dữ liệu nhập vào các kí tự (Bao gồm tất cả các kí tự có thể nhập từ bàn phím).</h4>
+    <h4 class="indent">Chuỗi: str()</h4>
+    <h3 class="indent">1. In một số nguyên</h3>
+    <pre class="code indent">n = int(input())
+print(n)</pre>
+    <pre class="output indent">Input: 1
+Output: 1</pre>
+    <h3 class="indent">2. In một số thực</h3>
+    <pre class="code indent">n = float(input())
+print(n)</pre>
+    <pre class="output indent">Input: 3.2
+Output: 3.2</pre>
+    <h3 class="indent">3. In một chuỗi</h3>
+    <pre class="code indent">n = input() hoặc n = str(input())
+print(n)</pre>
+    <pre class="output indent">Input: Hello
+Output: Hello</pre>
+
+    <h2>III. Phép toán</h2>
+    <h3 class="indent">Phép toán trong Python bao gồm các phép cộng, trừ, nhân, chia và nhiều phép toán khác.</h3>
+    <h3 class="indent">1. Phép cộng</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a + b)</pre>
+    <pre class="output indent">Output: 8</pre>
+    <h3 class="indent">2. Phép trừ</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a - b)</pre>
+    <pre class="output indent">Output: 2</pre>
+    <h3 class="indent">3. Phép nhân</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a * b)</pre>
+    <pre class="output indent">Output: 15</pre>
+    <h3 class="indent">4. Phép chia</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a / b)</pre>
+    <pre class="output indent">Output: 1.6666666666666667</pre>
+    <h3 class="indent">5. Phép chia lấy dư</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a % b)</pre>
+    <pre class="output indent">Output: 2</pre>
+    <h3 class="indent">6. Phép chia lấy phần nguyên</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a // b)</pre>
+    <pre class="output indent">Output: 1</pre>
+    <h3 class="indent">7. Phép lũy thừa</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a ** b)</pre>
+    <pre class="output indent">Output: 125</pre>
+
+    <h2>IV. Boolean</h2>
+    <h3 class="indent">Kiểu dữ liệu boolean chỉ có hai giá trị: True và False.</h3>
+    <h3 class="indent">1. True và False</h3>
+    <pre class="code indent">a = True
+b = False
+print(a, b)</pre>
+    <pre class="output indent">Output: True False</pre>
+
+    <h2>V. So sánh</h2>
+    <h3 class="indent">So sánh trong Python bao gồm các phép so sánh bằng, lớn hơn, nhỏ hơn, và nhiều phép so sánh khác.</h3>
+    <h3 class="indent">1. So sánh bằng</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a == b)</pre>
+    <pre class="output indent">Output: False</pre>
+    <h3 class="indent">2. So sánh lớn hơn</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a > b)</pre>
+    <pre class="output indent">Output: True</pre>
+    <h3 class="indent">3. So sánh nhỏ hơn</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a < b)</pre>
+    <pre class="output indent">Output: False</pre>
+    <h3 class="indent">4. So sánh lớn hơn hoặc bằng</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a >= b)</pre>
+    <pre class="output indent">Output: True</pre>
+    <h3 class="indent">5. So sánh nhỏ hơn hoặc bằng</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a <= b)</pre>
+    <pre class="output indent">Output: False</pre>
+    <h3 class="indent">6. So sánh khác</h3>
+    <pre class="code indent">a = 5
+b = 3
+print(a != b)</pre>
+    <pre class="output indent">Output: True</pre>
+
+    <h2>VI. Toán tử logic</h2>
+    <h3 class="indent">Toán tử logic trong Python bao gồm and, or, not.</h3>
+    <h3 class="indent">1. Toán tử and</h3>
+    <pre class="code indent">a = True
+b = False
+print(a and b)</pre>
+    <pre class="output indent">Output: False</pre>
+    <h3 class="indent">2. Toán tử or</h3>
+    <pre class="code indent">a = True
+b = False
+print(a or b)</pre>
+    <pre class="output indent">Output: True</pre>
+    <h3 class="indent">3. Toán tử not</h3>
+    <pre class="code indent">a = True
+print(not a)</pre>
+    <pre class="output indent">Output: False</pre>
+
+    <h2>VII. Điều kiện</h2>
+    <h3 class="indent">Điều kiện trong Python bao gồm if, else, và elif.</h3>
+    <h3 class="indent">1. If</h3>
+    <pre class="code indent">a = 5
+if a > 3:
+    print("a lớn hơn 3")</pre>
+    <pre class="output indent">Output: a lớn hơn 3</pre>
+    <h3 class="indent">2. If-Else</h3>
+    <pre class="code indent">a = 2
+if a > 3:
+    print("a lớn hơn 3")
+else:
+    print("a không lớn hơn 3")</pre>
+    <pre class="output indent">Output: a không lớn hơn 3</pre>
+    <h3 class="indent">3. Elif</h3>
+    <pre class="code indent">a = 3
+if a > 3:
+    print("a lớn hơn 3")
+elif a == 3:
+    print("a bằng 3")
+else:
+    print("a nhỏ hơn 3")</pre>
+    <pre class="output indent">Output: a bằng 3</pre>
+
+    <h2>VIII. Vòng lặp</h2>
+    <h3 class="indent">Vòng lặp trong Python bao gồm vòng lặp for và while.</h3>
+    <h3 class="indent">1. Vòng lặp for</h3>
+    <pre class="code indent">for i in range(5):
+    print(i)</pre>
+    <pre class="output indent">Output: 
+0
+1
+2
+3
+4</pre>
+    <h3 class="indent">2. Vòng lặp while</h3>
+    <pre class="code indent">i = 0
+while i < 5:
+    print(i)
+    i += 1</pre>
+    <pre class="output indent">Output: 
+0
+1
+2
+3
+4</pre>
+    <h3 class="indent">3. Vòng lặp lồng nhau</h3>
+    <pre class="code indent">for i in range(3):
+    for j in range(2):
+        print(i, j)</pre>
+    <pre class="output indent">Output: 
+0 0
+0 1
+1 0
+1 1
+2 0
+2 1</pre>
+    <h3 class="indent">4. Vòng lặp với điều kiện</h3>
+    <pre class="code indent">for i in range(5):
+    if i % 2 == 0:
+        print(i)</pre>
+    <pre class="output indent">Output: 
+0
+2
+4</pre>
+
+    <h2>IX. Mảng</h2>
+    <h3 class="indent">Mảng trong Python là một danh sách các phần tử có thể chứa các kiểu dữ liệu khác nhau.</h3>
+    <h3 class="indent">1. Khởi tạo mảng</h3>
+    <pre class="code indent">arr = [1, 2, 3, 4, 5]
+print(arr)</pre>
+    <pre class="output indent">Output: [1, 2, 3, 4, 5]</pre>
+    <h3 class="indent">2. Truy cập phần tử</h3>
+    <pre class="code indent">arr = [1, 2, 3, 4, 5]
+print(arr[0])</pre>
+    <pre class="output indent">Output: 1</pre>
+    <h3 class="indent">3. Thêm phần tử vào mảng</h3>
+    <pre class="code indent">arr = [1, 2, 3, 4, 5]
+arr.append(6)
+print(arr)</pre>
+    <pre class="output indent">Output: [1, 2, 3, 4, 5, 6]</pre>
+    <h3 class="indent">4. Xóa phần tử khỏi mảng</h3>
+    <pre class="code indent">arr = [1, 2, 3, 4, 5]
+arr.remove(3)
+print(arr)</pre>
+    <pre class="output indent">Output: [1, 2, 4, 5]</pre>
+    <h3 class="indent">5. Độ dài của mảng</h3>
+    <pre class="code indent">arr = [1, 2, 3, 4, 5]
+print(len(arr))</pre>
+    <pre class="output indent">Output: 5</pre>
+    <h3 class="indent">6. Đảo ngược mảng</h3>
+    <pre class="code indent">arr = [1, 2, 3, 4, 5]
+arr.reverse()
+print(arr)</pre>
+    <pre class="output indent">Output: [5, 4, 3, 2, 1]</pre>
+    <h3 class="indent">7. Sắp xếp mảng</h3>
+    <pre class="code indent">arr = [3, 1, 4, 5, 2]
+arr.sort()
+print(arr)</pre>
+    <pre class="output indent">Output: [1, 2, 3, 4, 5]</pre>
+
+    <h2>X. Slicing</h2>
+    <h3 class="indent">Slicing là cách để lấy một phần của mảng hoặc chuỗi.</h3>
+    <h3 class="indent">1. Slicing mảng</h3>
+    <pre class="code indent">arr = [1, 2, 3, 4, 5]
+print(arr[1:4])</pre>
+    <pre class="output indent">Output: [2, 3, 4]</pre>
+    <h3 class="indent">2. Slicing chuỗi</h3>
+    <pre class="code indent">s = "Hello, World!"
+print(s[7:12])</pre>
+    <pre class="output indent">Output: World</pre>
+</body>
+</html>
